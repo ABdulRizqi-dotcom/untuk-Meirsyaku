@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10152f">
+<title>Untuk Meirysya Hanum Utari ✦</title>
+<style>
+:root{--night:#090d20;--blue:#18264b;--pink:#ff9fc9;--soft:#ffe0ee;--gold:#f7d98b}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#fff;font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% 0%,#293967 0%,#111a37 40%,#080c1d 100%);overflow-x:hidden}
+#stars,.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;opacity:.7;animation:twinkle 2.8s infinite alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.55)}}
+.moon{position:fixed;top:8%;right:12%;width:76px;height:76px;border-radius:50%;background:#fff1c8;box-shadow:0 0 30px #ffe7aa,0 0 80px #d5c8ff66;opacity:.9}
+.wrap{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 16px}
+.card{width:min(100%,560px);text-align:center;padding:34px 24px 30px;border:1px solid #ffffff25;border-radius:28px;background:linear-gradient(145deg,#172344df,#10172ee8);box-shadow:0 20px 70px #0008;backdrop-filter:blur(10px)}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font:11px Arial,sans-serif}
+h1{font-size:clamp(32px,8vw,49px);font-weight:normal;line-height:1.1;margin:13px 0;color:#ffe6f1}
+p{font-size:17px;line-height:1.7;color:#e8e9f5}
+.name{color:var(--pink);text-shadow:0 0 18px #ff9fc966}
+.envelope-area{margin:28px auto 18px;cursor:pointer;width:190px;height:135px;position:relative;perspective:700px}
+.envelope{position:absolute;inset:20px 0 0;background:#f7a9c8;border-radius:8px;box-shadow:0 10px 25px #0005}
+.envelope:before,.envelope:after{content:"";position:absolute;bottom:0;width:0;height:0;border-style:solid}
+.envelope:before{left:0;border-width:0 95px 75px;border-color:transparent transparent #fbd0df}
+.envelope:after{right:0;border-width:0 0 75px 95px;border-color:transparent transparent #e98bb4}
+.flap{position:absolute;top:20px;left:0;width:0;height:0;border-left:95px solid transparent;border-right:95px solid transparent;border-top:72px solid #ffd9e7;transform-origin:top;transition:transform .7s;z-index:3}
+.seal{position:absolute;z-index:4;top:69px;left:78px;font-size:29px;transition:.3s}
+.envelope.open .flap{transform:rotateX(180deg);z-index:0}
+.envelope.open .seal{opacity:0;transform:scale(.5)}
+.letter{display:none;margin:20px auto 0;padding:20px 18px;border-radius:16px;background:#fff0f6;color:#493044;text-align:left;animation:rise .7s ease}
+.letter p{color:#493044;font-size:16px;margin:7px 0}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+button{border:0;border-radius:999px;padding:13px 21px;margin:7px 4px;font-size:15px;cursor:pointer;transition:transform .2s,filter .2s}
+button:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.primary{background:linear-gradient(100deg,#ff9fc9,#ffd0e4);color:#451d36;font-weight:bold}
+.secondary{background:#ffffff14;border:1px solid #ffffff45;color:#fff}
+.small{font:12px Arial,sans-serif;color:#b9c3df}
+.hidden{display:none!important}
+.heart{position:fixed;bottom:-30px;color:#ff9fc9;animation:float 7s linear forwards;text-shadow:0 0 12px #ff7eb6}
+@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+#admin{font-family:Arial,sans-serif;text-align:left}
+#admin h2{text-align:center;font-weight:500}
+input{width:100%;padding:12px;border-radius:10px;border:1px solid #ffffff44;background:#0c1430;color:white;margin:8px 0}
+.entry{padding:12px;border:1px solid #ffffff22;border-radius:12px;margin:9px 0;background:#ffffff09}
+footer{margin-top:20px;color:#9ca9ca;font:11px Arial,sans-serif}
+a{color:#ffd1e5}
+</style>
+</head>
+<body>
+<div id="stars"></div><div class="moon"></div><div class="hearts" id="hearts"></div>
+<main class="wrap">
+<section class="card" id="home">
+  <div class="eyebrow">A little message beneath the stars</div>
+  <h1>Untuk <span class="name">Meirysya Hanum Utari</span> ✦</h1>
+  <p>Ada sesuatu yang ingin kusampaikan. Mau membuka sebuah surat kecil dariku?</p>
+  <div class="envelope-area" id="openEnvelope" role="button" tabindex="0" aria-label="Buka amplop surat">
+    <div class="envelope" id="envelope"><div class="flap"></div><div class="seal">♥</div></div>
+  </div>
+  <div class="small">Ketuk amplopnya untuk membuka surat</div>
+  <article class="letter" id="letter">
+    <p>Hai, Meirysya Hanum Utari.</p>
+    <p>Setelah 1,5 bulan aku memendam rasa nyaman ini kepadamu, akhirnya aku memberanikan diri untuk mengungkapkan isi hatiku.</p>
+    <p>Aku berharap kita bisa saling berbagi cerita dan meringankan beban hidup masing-masing. Semoga kamu bisa menerima hatiku, dan semoga kamu juga merasa nyaman ya berada di dekatku—walaupun aku tahu akhir-akhir ini kamu jarang balas chatku, hehe.</p>
+    <p>Aku nggak ingin memaksakan apa pun. Aku cuma ingin jujur tentang perasaanku, dan apa pun jawabanmu, aku akan menghargainya.</p>
+    <p style="text-align:right">Dengan tulus, seseorang yang ingin mengenalmu ✨</p>
+  </article>
+  <div id="choices" class="hidden">
+    <h2 style="font-weight:normal;color:#ffe5f0">Bagaimana jawabanmu, Meirysya? 💗</h2>
+    <button class="primary" id="yes">Iya, aku mau ❤️</button>
+    <button class="secondary" id="later">Aku ingin pikir-pikir dahulu</button>
+    <button class="secondary" id="direct">Langsung jadian aja 💞</button>
+  </div>
+  <div id="thinkingChoices" class="hidden">
+    <h2 style="font-weight:normal;color:#ffe5f0">Nggak apa-apa, kamu boleh memilih dengan nyaman 🌷</h2>
+    <button class="primary" id="thinking">Masih berpikir dulu</button>
+    <button class="secondary" id="reject">Maaf ya, aku tolak</button>
+    <button class="secondary" id="backChoices">Kembali</button>
+  </div>
+  <div id="result" class="hidden">
+    <h2 id="resultTitle" style="font-weight:normal;color:#ffe5f0"></h2>
+    <p id="resultText"></p>
+    <button class="secondary" id="again">Kembali ke surat</button>
+  </div>
+  <div style="margin:18px auto 8px;max-width:360px">
+    <div style="color:#ffe5f0;font-size:16px;margin-bottom:9px">♫ Hannah Montana — Rex Orange County</div>
+    <audio id="loveSong" controls preload="metadata" style="width:100%">
+      <source src="Rex Orange County - Hannah Montana (Official Video).mp3" type="audio/mpeg">
+      Browser kamu belum mendukung pemutar audio.
+    </audio>
+    <div class="small">Letakkan file MP3 satu folder dengan file website ini agar musik bisa diputar.</div>
+  </div>
+  <footer>Made with sincerity under the same sky · <a href="#admin" id="adminLink">Admin</a></footer>
+</section>
+<section class="card hidden" id="admin">
+  <div class="eyebrow">Private view</div><h2>Dashboard Admin</h2>
+  <div id="login">
+    <p>Masukkan kata sandi untuk melihat jawaban yang tersimpan di perangkat ini.</p>
+    <input id="password" type="password" placeholder="Kata sandi admin">
+    <button class="primary" id="loginBtn">Masuk</button>
+    <p class="small">Kata sandi awal: <b>langit123</b> · Ganti di kode sebelum dibagikan.</p>
+    <p id="loginError" class="small"></p>
+  </div>
+  <div id="panel" class="hidden">
+    <p>Jawaban yang tercatat pada browser/perangkat ini:</p>
+    <div id="entries"></div>
+    <button class="secondary" id="refresh">Muat ulang</button>
+    <button class="secondary" id="clear">Hapus riwayat di perangkat ini</button>
+    <button class="secondary" id="back">Kembali ke website</button>
+    <p class="small">Catatan: penyimpanan ini hanya lokal. Agar jawaban bisa dilihat dari perangkat lain, website perlu dihubungkan ke layanan database.</p>
+  </div>
+</section>
+</main>
+<script>
+const starBox=document.getElementById('stars');
+for(let i=0;i<105;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.opacity=.2+Math.random()*.8;starBox.appendChild(s)}
+function hearts(n=12){for(let i=0;i<n;i++){let h=document.createElement('span');h.className='heart';h.textContent=['♥','♡','✦'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'%';h.style.fontSize=(13+Math.random()*22)+'px';h.style.animationDuration=(5+Math.random()*4)+'s';document.getElementById('hearts').appendChild(h);setTimeout(()=>h.remove(),9500)}}
+let opened=false;
+function openLetter(){if(opened)return;opened=true;document.getElementById('envelope').classList.add('open');setTimeout(()=>{document.getElementById('letter').style.display='block';document.getElementById('choices').classList.remove('hidden');hearts(10)},450)}
+document.getElementById('openEnvelope').addEventListener('click',openLetter);
+document.getElementById('openEnvelope').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+function saveAnswer(answer){let rows=JSON.parse(localStorage.getItem('meirysya_answers')||'[]');rows.push({answer,time:new Date().toLocaleString('id-ID')});localStorage.setItem('meirysya_answers',JSON.stringify(rows))}
+function showResult(title, message, answer, positive=false){
+  document.getElementById('choices').classList.add('hidden');
+  document.getElementById('thinkingChoices').classList.add('hidden');
+  document.getElementById('result').classList.remove('hidden');
+  document.getElementById('resultTitle').textContent=title;
+  document.getElementById('resultText').textContent=message;
+  saveAnswer(answer);
+  hearts(positive?35:10);
+}
+document.getElementById('yes').onclick=()=>showResult(
+  'Terima kasih, Meirysya! ❤️',
+  'Aku senang mendengarnya. Semoga kita bisa saling mengenal lebih dekat, saling menjaga kenyamanan, dan menjalani semuanya dengan tulus.',
+  'Iya, aku mau ❤️', true
+);
+document.getElementById('direct').onclick=()=>showResult(
+  'Wah, langsung jadian? 💞',
+  'Serius nih? Kalau kamu juga yakin dan nyaman, aku mau banget. Yuk, kita mulai cerita baru bersama, pelan-pelan dan saling menghargai. ❤️',
+  'Langsung jadian aja 💞', true
+);
+document.getElementById('later').onclick=()=>{
+  document.getElementById('choices').classList.add('hidden');
+  document.getElementById('thinkingChoices').classList.remove('hidden');
+};
+document.getElementById('thinking').onclick=()=>showResult(
+  'Baik, aku tunggu ya 🌙',
+  'Oke saya tunggu keputusanmu ya. Santai aja, aku nggak terlalu memaksakan dirimu. Ambil waktu yang kamu butuhkan.',
+  'Masih berpikir dulu'
+);
+document.getElementById('reject').onclick=()=>showResult(
+  'Yah, belum berjodoh 😅',
+  'Hahaha, yaahh, gagal deh. Tapi nggak apa-apa, setidaknya rasa penasaranku sudah hilang sekarang! Makasih ya sudah jujur. Oh iya, habis ini tetap bisa temenan kan? Atau jangan-jangan kamu mau langsung nge-block aku nih? Haha. Tenang, aku tetap menghargai keputusanmu.',
+  'Maaf ya, aku tolak'
+);
+document.getElementById('backChoices').onclick=()=>{
+  document.getElementById('thinkingChoices').classList.add('hidden');
+  document.getElementById('choices').classList.remove('hidden');
+};
+document.getElementById('again').onclick=()=>{document.getElementById('result').classList.add('hidden');document.getElementById('thinkingChoices').classList.add('hidden');document.getElementById('choices').classList.remove('hidden')};
+document.getElementById('adminLink').onclick=e=>{e.preventDefault();document.getElementById('home').classList.add('hidden');document.getElementById('admin').classList.remove('hidden')};
+document.getElementById('loginBtn').onclick=()=>{if(document.getElementById('password').value==='langit123'){document.getElementById('login').classList.add('hidden');document.getElementById('panel').classList.remove('hidden');renderEntries()}else document.getElementById('loginError').textContent='Kata sandi belum benar.'};
+function renderEntries(){let rows=JSON.parse(localStorage.getItem('meirysya_answers')||'[]');document.getElementById('entries').innerHTML=rows.length?rows.map(r=>`<div class="entry"><b>${escapeHtml(r.answer)}</b><br><span class="small">${escapeHtml(r.time)}</span></div>`).join(''):'<div class="entry">Belum ada jawaban yang tersimpan di browser ini.</div>'}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+document.getElementById('refresh').onclick=renderEntries;
+document.getElementById('clear').onclick=()=>{if(confirm('Hapus semua jawaban di perangkat ini?')){localStorage.removeItem('meirysya_answers');renderEntries()}};
+document.getElementById('back').onclick=()=>{document.getElementById('admin').classList.add('hidden');document.getElementById('home').classList.remove('hidden')};
+
+</script>
+</body>
+</html>
